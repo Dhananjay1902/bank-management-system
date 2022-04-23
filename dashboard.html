@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bank windows</title>
+</head>
+<style>
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.wrapper:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header{
+     background-color:blue;
+     top:0; 
+    
+}
+
+header nav{
+    float: right;
+}
+
+header nav h2{
+    text-indent: -10000px;
+    height: 0;
+    margin: 0;
+}
+
+header nav li{
+    float: left;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: #201C1C;
+    font-size: 18px;
+}
+header nav li a:hover{
+    color: #FDFCFC;
+    transition: 0.2s ease-in;
+}
+.line{
+    width: 100%;
+    display: block;
+     border-bottom: 2px solid #4F4A4A;
+}
+.line:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#banner img{
+    opacity: 1;
+}
+#banner img:hover{
+    opacity: 0.5;
+    transition: 0.3s ease-in;
+}
+.title{
+    display: block;
+}
+.title:after{
+    display: block;
+}
+.title ul li{
+    font-size: 40px;
+    list-style: none;
+    text-align: center;
+}
+.title2{
+    display: block;
+    font-size: 20px;
+    padding-left: 75px;
+    text-align: center;
+}
+.title2:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+#customers {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 90%;
+margin-top:100px;
+margin-left:80px;
+}
+
+#customers td, #customers th {
+border: 1px solid #E8ADAD;
+padding: 8px;
+text-align:center;
+}
+table:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.title ul li{
+    font-size: 30px;
+    display: block;
+    padding:5px;
+    margin-left: 30px;
+}
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+#customers:after{
+    clear: both;
+    display: block;
+    content: "";
+}
+#customers th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: center;
+background-color:blue;
+color: white;
+}
+#customers th:hover{
+ background-color: #D01010;  
+}
+footer{
+     background:blue;
+      margin-top: 40%;
+    padding: 5px 0;
+    width: 100%;
+    position: absolute;
+}
+
+footer:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+footer ul{
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+</style>
+<body>
+     <header>
+            <div class="wrapper">
+                
+                <nav>
+                    <h2>Main Navigation</h2>
+                    <ul><b>
+                       <li><a href="dashboard.html">Home</a></li>
+                        <li><a href="registration.html">Create account</a></li>
+                        <li><a href="about.html">About Bank management</a></li>
+                        </b>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="banner">
+        <img src="image/bank.jpg" style="margin-left: 40%;">
+    </div>
+    <div class="line"></div>
+    <div class="title">
+        <ul>
+            <li>Welcome, Admin</li>
+        </ul>
+    </div>
+    <div class="title2">
+        <h4>Below are the list of the people who are registered as account.</h4>
+    </div>
+
+
+<table border='1' id='customers'>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Contact</th>
+                <th>Gender</th>
+                <th>account type</th>
+				<th>account balance</th>
+            </tr>
+
+            <tr>
+                <td>dhananjay</td>
+                <td>patil</td>
+                <td>Alkhed</td>
+                <td>9607227920</td>
+                <td>male</td>
+                <td>saving</td>
+				<td>10000</td>
+            </tr>
+			 <tr>
+                <td>dhanu</td>
+                <td>patil</td>
+                <td>shahada</td>
+                <td>9604567920</td>
+                <td>male</td>
+                <td>saving</td>
+				<td>134560</td>
+            </tr>
+			 <tr>
+                <td>jay</td>
+                <td>patil</td>
+                <td>pune</td>
+                <td>9602347920</td>
+                <td>male</td>
+                <td>current</td>
+				<td>123456</td>
+            </tr> <tr>
+                <td>priti</td>
+                <td>patil</td>
+                <td>nagar</td>
+                <td>9234567840</td>
+                <td>female</td>
+                <td>saving</td>
+				<td>1345600</td>
+            </tr>
+ 
+
+</body>
+<footer>
+     <div class="wrapper">
+         <ul>
+             <li>Bank Management System</li>
+                 </ul>
+     </div>
+</footer>
+</html>
